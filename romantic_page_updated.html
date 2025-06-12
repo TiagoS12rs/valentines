@@ -583,8 +583,8 @@
             }
             
             const ageNumber = parseInt(age);
-            if (ageNumber < 18 || ageNumber > 100) {
-                showAlert('Por favor, digite uma idade válida (18-100 anos)!', 'warning');
+            if (ageNumber < 10 || ageNumber > 20) {
+                showAlert('Por favor, digite uma idade válida!', 'warning');
                 ageInput.focus();
                 return;
             }
@@ -705,8 +705,8 @@
             
             if (accepted) {
                 resultDiv.innerHTML = `
-                    <h2>Uhuul! 🎉</h2>
-                    <p><strong>Informações coletadas com sucesso:</strong></p>
+                    <h2>Eita </h2>
+                    <p><strong>Informações coletadas sem sucesso Se der pra vc me mandar print da tela , pq pra mim fazer um sistema que armazenasse as informações e mandasse pra mim ia dar um trabalho do krl KKKK:</strong></p>
                     <div style="background: rgba(255, 255, 255, 0.3); padding: 15px; border-radius: 15px; margin: 15px 0;">
                         <p>⭐ <strong>Nota de atratividade:</strong> ${responses.attractiveness}/10</p>
                         <p>🎂 <strong>Idade:</strong> ${responses.age} anos</p>
@@ -721,15 +721,15 @@
                 createConfetti();
             } else {
                 resultDiv.innerHTML = `
-                    <h2>Tudo bem! 😊</h2>
-                    <p>Respeitamos sua decisão!</p>
-                    <p>Mas saiba que você sempre será especial! 💖</p>
+                    <h2>Acontece! </h2>
+                    <p>O futebol é fd </p>
+                    <p>se der pra vc me mandar print da tela , pq pra criar um sistema que coletasse essas informações ia dar um trabalho do krl kkkkkk</p>
                     <div style="background: rgba(255, 255, 255, 0.3); padding: 15px; border-radius: 15px; margin: 15px 0;">
                         <p>⭐ <strong>Nota de atratividade:</strong> ${responses.attractiveness}/10</p>
                         <p>🎂 <strong>Idade:</strong> ${responses.age} anos</p>
                     </div>
                     <p style="font-size: 14px; opacity: 0.8; margin-top: 15px;">
-                        Obrigado por participar mesmo assim! 🌟
+                        Obrigado por participar mesmo assim.
                     </p>
                 `;
             }
